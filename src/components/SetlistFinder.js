@@ -26,13 +26,14 @@ class SetlistFinder extends Component {
   render() {
     return (
       <Paper style={this.style} zDepth={3}>
-        <h3>Find a show</h3>
+        <h2>Find a show</h2>
         <DatePicker
           value={this.state.date}
           onChange={this.handleChange}
           hintText="Select a date"
           openToYearSelection={true}
         />
+        {this.state.date ? <div>{this.state.date.toString()}</div> : <div />}
       </Paper>
     );
   }

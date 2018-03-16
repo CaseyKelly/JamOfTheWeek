@@ -27,7 +27,6 @@ class LatestShows extends Component {
         }`
       );
       const json = await response.json();
-      console.log(json.response.data[0]);
       const show = {
         date: json.response.data[0].short_date,
         location: json.response.data[0].location,
