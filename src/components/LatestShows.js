@@ -7,13 +7,12 @@ class LatestShows extends Component {
   };
 
   style = {
-    height: 600,
-    width: 1000,
+    height: 800,
+    width: 500,
     margin: 20,
     padding: 20,
     backgroundColor: 'lightBlue',
-    textAlign: 'center',
-    display: 'inline-block',
+    display: 'inline-flex'
   };
 
   async componentDidMount() {
@@ -45,7 +44,7 @@ class LatestShows extends Component {
 
   render() {
     return (
-      <Paper style={this.style} zDepth={5}>
+      <Paper style={this.style} zDepth={3}>
         {this.state.latestShow ? (
           <div>
             <h2>Most Recent Show:</h2>

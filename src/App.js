@@ -18,8 +18,8 @@ const App = () => {
         title="Jam of the Week"
         iconElementLeft={<MusicNote hoverColor="red" style={styles.logo} />}
       />
-      <SetlistFinder />
       <LatestShows />
+      <SetlistFinder />
     </div>
   );
 };
